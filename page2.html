@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Second Page | TUKS MOGALE</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    :root {
+      --bg-dark: #120f0a;
+      --bg-mid: #2d1d00;
+      --gold: #d4af37;
+      --gold-soft: #f2cf5e;
+      --card: rgba(12, 12, 12, 0.96);
+      --text: #f5f5f5;
+      --muted: #f0e3b8;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: radial-gradient(circle at top, rgba(212,175,55,0.16), transparent 35%),
+                  linear-gradient(180deg, #1a1a1a 0%, #3d2a00 100%);
+      color: var(--text);
+      padding: 32px 20px;
+    }
+
+    .card {
+      width: min(760px, 100%);
+      background: var(--card);
+      border: 3px solid var(--gold);
+      border-radius: 20px;
+      padding: 30px 24px 26px;
+      text-align: center;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.3);
+    }
+
+    .profile-img {
+      width: min(230px, 70%);
+      height: 230px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 18px;
+      border-radius: 18px;
+      border: 3px solid var(--gold);
+      box-shadow: 0 12px 22px rgba(212,175,55,0.22);
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      color: var(--gold);
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 1.08rem;
+      line-height: 1.8;
+      color: var(--text);
+      margin: 16px 0;
+    }
+
+    .highlight {
+      color: var(--gold-soft);
+      font-weight: bold;
+    }
+
+    .buttons {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .buttons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 170px;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 999px;
+      font-weight: bold;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .primary {
+      background: var(--gold);
+      color: #111;
+      box-shadow: 0 10px 18px rgba(212,175,55,0.15);
+    }
+
+    .secondary {
+      background: transparent;
+      color: var(--text);
+      border: 2px solid var(--gold);
+    }
+
+    .buttons a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 20px rgba(212,175,55,0.18);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    
+    <img class="profile-img" src="image/tt...pje.png" alt="TUKS MOGALE profile">
+  
+    <h1>SECOND PAGE</h1>
+    <p>
+      Welcome to the next section of the ministry journey.<br>
+      <span class="highlight">TUKS MOGALE</span> continues to bring worship, joy, and spiritual sound through the trumpet.
+    </p>
+    <p>
+      For bookings, appearances, and worship sessions, contact:<br>
+      <span class="highlight">+27 65 692 7619</span><br>
+      <span class="highlight">tokologomogale02@gmail.com</span>
+    </p>
+
+    <div class="buttons">
+      <a class="primary" href="index.html">Back to Home</a>
+      <a class="secondary" href="mailto:mogaletokologo02@gmail.com">Email</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
